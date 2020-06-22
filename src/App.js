@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/upload" component={UploadDiv}></Route>
           <Route exact path="/list" component={FilesTable}></Route>
           <Route exact path="/stats" component={Graph}></Route>
-          <Route path="/" component={UploadDiv} />
+          <Route exact path="/" component={UploadDiv} />
         </div>
       </div>
     </div>
