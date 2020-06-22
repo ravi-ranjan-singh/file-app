@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import NavBar from './Navbar/navBar';
+import Graph from './Graph/graph';
+import SideBar from './Sidebar/sideBar';
+import UploadDiv from './uploadArea/uploadDiv';
+import FilesTable from './fileTable/fileTable';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar></NavBar>
+      <div className="main">
+        <SideBar></SideBar>
+        <div className="content">
+          <Route exact path="/upload" component={UploadDiv}></Route>
+          <Route exact path="/list" component={FilesTable}></Route>
+          <Route exact path="/stats" component={Graph}></Route>
+        </div>
+      </div>
     </div>
   );
 }

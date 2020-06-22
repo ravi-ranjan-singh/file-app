@@ -1,0 +1,29 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #031c47;
+  color: white;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar .logo {
+  width: 10%;
+}
+
+.navbar .heading {
+  color: rgb(241, 241, 241);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  width: 90% !important;
+}
+
+.logo img {
+  width: 150px;
+  height: 68px;
+}
